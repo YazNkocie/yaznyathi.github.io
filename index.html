@@ -1,145 +1,186 @@
-<!DOCTYPE HTML>
-<!--
-	Massively by HTML5 UP
-	html5up.net | @ajlkn
-	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
--->
-<html>
-	<head>
-		<title>Yaz Nyathi Portfolio</title>
-		<meta charset="utf-8" />
-		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
-		<link rel="stylesheet" href="assets/css/main.css" />
-		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
-	</head>
-	<body class="is-preload">
+<!DOCTYPE HTML><!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Yaz Nyathi Portfolio</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+</head>
+<body class="bg-gray-100 font-sans">
+    <!-- Sidebar Navigation -->
+    <nav class="fixed top-0 left-0 h-full w-64 bg-navy text-white flex flex-col p-6 md:block hidden">
+        <a href="#" class="text-2xl font-bold mb-8">Yaz Nyathi</a>
+        <ul class="space-y-4">
+            <li><a href="#intro" class="hover:text-teal-400 transition">Home</a></li>
+            <li><a href="#projects" class="hover:text-teal-400 transition">Projects</a></li>
+            <li><a href="#about" class="hover:text-teal-400 transition">About</a></li>
+            <li><a href="#contact" class="hover:text-teal-400 transition">Contact</a></li>
+        </ul>
+        <div class="mt-auto">
+            <ul class="flex space-x-4">
+                <li><a href="https://www.linkedin.com/in/yazininkosi-nyathi/" class="hover:text-teal-400"><i class="fab fa-linkedin text-xl"></i></a></li>
+                <li><a href="https://github.com/YazNkocie" class="hover:text-teal-400"><i class="fab fa-github text-xl"></i></a></li>
+            </ul>
+        </div>
+    </nav>
+    <!-- Mobile Navigation -->
+    <nav class="md:hidden bg-navy text-white p-4 flex justify-between items-center">
+        <a href="#" class="text-xl font-bold">Yaz Nyathi</a>
+        <button id="menu-toggle" class="text-2xl">☰</button>
+        <ul id="mobile-menu" class="hidden flex-col space-y-4 pt-4">
+            <li><a href="#intro" class="hover:text-teal-400">Home</a></li>
+            <li><a href="#projects" class="hover:text-teal-400">Projects</a></li>
+            <li><a href="#about" class="hover:text-teal-400">About</a></li>
+            <li><a href="#contact" class="hover:text-teal-400">Contact</a></li>
+        </ul>
+    </nav>
 
-		<!-- Wrapper -->
-			<div id="wrapper" class="fade-in">
+    <!-- Main Content -->
+    <div class="md:ml-64">
+        <!-- Hero Section -->
+        <section id="intro" class="bg-gradient-to-r from-navy to-teal-600 text-black py-24 text-center relative overflow-hidden">
+            <div class="absolute inset-0 opacity-10" style="background-image: url('https://www.transparenttextures.com/patterns/graphy.png');"></div>
+            <div class="container mx-auto px-4 relative z-10">
+                <h1 class="text-3xl md:text-5xl font-extrabold mb-4 animate-fade-in text-shadow-md text-black tracking-wide">
+                    Yaz Nyathi<br>Portfolio
+                </h1>
+                <p class="text-lg md:text-xl mb-6 animate-fade-in animation-delay-200 text-black">Data Analyst skilled in SQL, Tableau, Excel, Power BI, and Python | <a href="https://twitter.com/Yaznyathi19" class="underline hover:text-navy">Yaznyathi19</a></p>
+                <a href="#projects" class="inline-block bg-teal-700 text-black px-6 py-3 rounded-lg hover:bg-white hover:text-navy hover:animate-pulse transition animate-fade-in animation-delay-400">Explore Projects</a>
+            </div>
+        </section>
 
-				<!-- Intro -->
-					<div id="intro">
-						<h1>Yaz Nyathi Portfolio<br />
-						</h1>
-						<p>data analyst skilled in SQL, Tableau, Ecxel , PowerBI and Python<a href="https://twitter.com/ajlkn">@Yaznyathi19</a> 
-				
-						<ul class="actions">
-							<li><a href="#header" class="button icon solid solo fa-arrow-down scrolly">Continue</a></li>
-						</ul>
-					</div>
+        <!-- About Section -->
+        <section id="about" class="py-16 bg-white">
+            <div class="container mx-auto px-4">
+                <h2 class="text-3xl font-bold mb-6 text-center text-navy">About Me</h2>
+                <p class="text-lg text-gray-600 max-w-2xl mx-auto">I’m a dedicated data analyst with expertise in SQL, Tableau, Excel, Power BI, and Python. My passion lies in transforming raw data into meaningful insights through cleaning, exploration, and visualization. Check out my projects to see my work in action.</p>
+            </div>
+        </section>
 
-				<!-- Header -->
-					<header id="header">
-						<a href="index.html" class="logo">yaz nyathi</a>
-					</header>
+        <!-- Projects Section -->
+        <section id="projects" class="py-16 bg-gray-100">
+            <div class="container mx-auto px-4">
+                <h2 class="text-3xl font-bold mb-8 text-center text-navy">My Projects</h2>
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                    <!-- Project 1 -->
+                    <article class="bg-white rounded-lg shadow-lg overflow-hidden transform hover:scale-105 transition">
+                        <a href="https://github.com/YazNkocie/yazforeinghill.github.io/commit/b71f0c306140d264c3bf388c7511d8ca1ce40336">
+                            <img src="images/layofftwo.jpg" alt="Data Cleaning in SQL" class="w-full h-64 object-cover">
+                        </a>
+                        <div class="p-6">
+                            <h3 class="text-xl font-semibold mb-2 text-navy"><a href="https://github.com/YazNkocie/yazforeinghill.github.io/commit/b71f0c306140d264c3bf388c7511d8ca1ce40336">Data Cleaning in SQL</a></h3>
+                            <p class="text-gray-600 mb-4">Cleaned world layoffs data using SQL for enhanced data integrity.</p>
+                            <a href="https://github.com/YazNkocie/yazforeinghill.github.io/commit/b71f0c306140d264c3bf388c7511d8ca1ce40336" class="inline-block bg-teal-600 text-white px-4 py-2 rounded hover:bg-teal-700">View Project</a>
+                        </div>
+                    </article>
+                    <!-- Project 2 -->
+                    <article class="bg-white rounded-lg shadow-lg overflow-hidden transform hover:scale-105 transition">
+                        <a href="https://github.com/YazNkocie/yazforeinghill.github.io/commit/abc73c5313c98e89fb4b778278cb985499995ec2">
+                            <img src="images/layoff.jpg" alt="Data Exploration in SQL" class="w-full h-64 object-cover">
+                        </a>
+                        <div class="p-6">
+                            <h3 class="text-xl font-semibold mb-2 text-navy"><a href="https://github.com/YazNkocie/yazforeinghill.github.io/commit/abc73c5313c98e89fb4b778278cb985499995ec2">Data Exploration in SQL</a></h3>
+                            <p class="text-gray-600 mb-4">Explored world layoffs data using SQL to identify key trends.</p>
+                            <a href="https://github.com/YazNkocie/yazforeinghill.github.io/commit/abc73c5313c98e89fb4b778278cb985499995ec2" class="inline-block bg-teal-600 text-white px-4 py-2 rounded hover:bg-teal-700">View Project</a>
+                        </div>
+                    </article>
+                    <!-- Project 3 -->
+                    <article class="bg-white rounded-lg shadow-lg overflow-hidden transform hover:scale-105 transition">
+                        <a href="https://public.tableau.com/app/profile/yazininkosi.nyathi/viz/AirBnBFullProject_17158907265610/Dashboard1?publish=yes">
+                            <img src="images/tableau.jpg" alt="Tableau Projects" class="w-full h-64 object-cover">
+                        </a>
+                        <div class="p-6">
+                            <h3 class="text-xl font-semibold mb- @(mb-2 text-navy"><a href="https://public.tableau.com/app/profile/yazininkosi.nyathi/viz/AirBnBFullProject_17158907265610/Dashboard1?publish=yes">Tableau Projects</a></h3>
+                            <p class="text-gray-600 mb-4">Interactive Tableau dashboards showcasing advanced visualizations.</p>
+                            <a href="https://public.tableau.com/app/profile/yazininkosi.nyathi/viz/AirBnBFullProject_17158907265610/Dashboard1?publish=yes" class="inline-block bg-teal-600 text-white px-4 py-2 rounded hover:bg-teal-700">View Project</a>
+                        </div>
+                    </article>
+                    <!-- Project 4 -->
+                    <article class="bg-white rounded-lg shadow-lg overflow-hidden transform hover:scale-105 transition">
+                        <a href="https://app.powerbi.com/reportEmbed?reportId=e1230eca-1ba2-4a1c-be5c-cb43d58d3e26&autoAuth=true&ctid=704ce3d6-a4bf-4e09-8516-d52840c9f7a9">
+                            <img src="images/Screenshot (1).png" alt="Power BI Projects" class="w-full h-64 object-cover">
+                        </a>
+                        <div class="p-6">
+                            <h3 class="text-xl font-semibold mb-2 text-navy"><a href="https://app.powerbi.com/reportEmbed?reportId=e1230eca-1ba2-4a1c-be5c-cb43d58d3e26&autoAuth=true&ctid=704ce3d6-a4bf-4e09-8516-d52840c9f7a9">Power BI Projects</a></h3>
+                            <p class="text-gray-600 mb-4">Dynamic Power BI dashboards for data-driven decision-making.</p>
+                            <a href="https://app.powerbi.com/reportEmbed?reportId=e1230eca-1ba2-4a1c-be5c-cb43d58d3e26&autoAuth=true&ctid=704ce3d6-a4bf-4e09-8516-d52840c9f7a9" class="inline-block bg-teal-600 text-white px-4 py-2 rounded hover:bg-teal-700">View Project</a>
+                        </div>
+                    </article>
+                    <!-- Project 5 -->
+                    <article class="bg-white rounded-lg shadow-lg overflow-hidden transform hover:scale-105 transition">
+                        <a href="https://app.powerbi.com/reportEmbed?reportId=647dc510-14d0-4803-809b-066a9a9c1523&autoAuth=true&ctid=704ce3d6-a4bf-4e09-8516-d52840c9f7a9">
+                            <img src="images/Data-Mining-Techniques-in-Healthcare.jpg" alt="Power BI Healthcare Project" class="w-full h-64 object-cover">
+                        </a>
+                        <div class="p-6">
+                            <h3 class="text-xl font-semibold mb-2 text-navy"><a href="https://app.powerbi.com/reportEmbed?reportId=647dc510-14d0-4803-809b-066a9a9c1523&autoAuth=true&ctid=704ce3d6-a4bf-4e09-8516-d52840c9f7a9">Power BI Healthcare Project</a></h3>
+                            <p class="text-gray-600 mb-4">Power BI dashboard analyzing healthcare data insights.</p>
+                            <a href="https://app.powerbi.com/reportEmbed?reportId=647dc510-14d0-4803-809b-066a9a9c1523&autoAuth=true&ctid=704ce3d6-a4bf-4e09-8516-d52840c9f7a9" class="inline-block bg-teal-600 text-white px-4 py-2 rounded hover:bg-teal-700">View Project</a>
+                        </div>
+                    </article>
+                </div>
+            </div>
+        </section>
 
-				<!-- Nav -->
-					<nav id="nav">
-						<ul class="links">
-							<li class="active"><a href="index.html">Yaz Nyathi</a></li>
-							
-						</ul>
-						<ul class="icons">
-							<li><a href="https://www.linkedin.com/in/yazininkosi-nyathi/" class="icon brands alt fa-linkedin"><span class="label">linkedin</span></a></li>
-									<li><a href="https://github.com/YazNkocie" class="icon brands alt fa-github"><span class="label">GitHub</span></a></li>
-						</ul>
-					</nav>
+        <!-- Contact Section -->
+        <section id="contact" class="py-16 bg-white">
+            <div class="container mx-auto px-4 text-center">
+                <h2 class="text-3xl font-bold mb-8 text-navy">Get in Touch</h2>
+                <div class="max-w-lg mx-auto">
+                    <div class="mb-8">
+                        <p class="text-gray-600 mb-2"><strong>Location:</strong> Vredenburg, WC 12345-67890</p>
+                        <p class="text-gray-600 mb-2"><strong>Phone:</strong> <a href="tel:+27760387475" class="hover:text-teal-600">(+27) 760387475</a></p>
+                        <p class="text-gray-600 mb-2"><strong>Email:</strong> <a href="mailto:yazininkosinnyathi@gmail.com" class="hover:text-teal-600">yazininkosinnyathi@gmail.com</a></p>
+                        <ul class="flex justify-center space-x-4 mt-4">
+                            <li><a href="https://www.linkedin.com/in/yazininkosi-nyathi/" class="text-gray-600 hover:text-teal-600"><i class="fab fa-linkedin text-2xl"></i></a></li>
+                            <li><a href="https://github.com/YazNkocie" class="text-gray-600 hover:text-teal-600"><i class="fab fa-github text-2xl"></i></a></li>
+                        </ul>
+                    </div>
+                    <div class="space-y-4">
+                        <input type="text" placeholder="Name" class="w-full p-3 border rounded-lg focus:outline-none focus:ring-2 focus:ring-teal-600">
+                        <input type="email" placeholder="Email" class="w-full p-3 border rounded-lg focus:outline-none focus:ring-2 focus:ring-teal-600">
+                        <textarea placeholder="Message" class="w-full p-3 border rounded-lg focus:outline-none focus:ring-2 focus:ring-teal-600 h-32"></textarea>
+                        <button class="bg-teal-600 text-white px-6 py-3 rounded-lg hover:bg-teal-700 transition">Send Message</button>
+                    </div>
+                </div>
+            </div>
+        </section>
 
-				<!-- Main -->
-					<div id="main">
+        <!-- Footer -->
+        <footer class="bg-navy text-white py-6">
+            <div class="container mx-auto px-4 text-center">
+                <p>© Yaz Nyathi. All rights reserved. Design inspired by <a href="https://html5up.net" class="underline hover:text-teal-400">HTML5 UP</a>.</p>
+            </div>
+        </footer>
+    </div>
 
-						<!-- Featured Post -->
-							<article class="post featured">
-								<header class="major">
-									
-									<h2><a href="https://github.com/YazNkocie/yazforeinghill.github.io/commit/b71f0c306140d264c3bf388c7511d8ca1ce40336">Data cleaning in SQL<br />
-									</a></h2>
-									<p>In this project we cleaned world layoffs data in SQL.</p>
-								</header>
-								<a href="https://github.com/YazNkocie/yazforeinghill.github.io/commit/b71f0c306140d264c3bf388c7511d8ca1ce40336" class="image main"><img src="data analysis.jpg" alt="" /></a>
-								<ul class="actions special">
-									<li><a href="https://github.com/YazNkocie/yazforeinghill.github.io/commit/b71f0c306140d264c3bf388c7511d8ca1ce40336" class="button large">View Project</a></li>
-								</ul>
-							</article>
-
-						<!-- Posts -->
-							<section class="posts">
-								<article>
-									<header>
-										
-										<h2><a href="https://github.com/YazNkocie/yazforeinghill.github.io/commit/abc73c5313c98e89fb4b778278cb985499995ec2">Data Exploration in SQL<br />
-										</a></h2>
-									</header>
-									<a href="https://github.com/YazNkocie/yazforeinghill.github.io/commit/abc73c5313c98e89fb4b778278cb985499995ec2" class="image fit"><img src="images/layoff.jpg" alt="" /></a>
-									<p>Data exploration of world layoffs in SQL.</p>
-									<ul class="actions special">
-										<li><a href="https://github.com/YazNkocie/yazforeinghill.github.io/commit/abc73c5313c98e89fb4b778278cb985499995ec2" class="button">View Project</a></li>
-									</ul>
-								</article>
-								<article>
-									<header>
-										
-										<h2><a href="https://public.tableau.com/app/profile/yazininkosi.nyathi/viz/AirBnBFullProject_17158907265610/Dashboard1?publish=yes">Tableau Projects<br />
-										</a></h2>
-									</header>
-									<a href="https://public.tableau.com/app/profile/yazininkosi.nyathi/viz/AirBnBFullProject_17158907265610/Dashboard1?publish=yes" class="image fit"><img src="tableau.jpg" alt="" /></a>
-									<p>these are all my Tableau Dashboards</p>
-									<ul class="actions special">
-										<li><a href="https://public.tableau.com/app/profile/yazininkosi.nyathi/viz/AirBnBFullProject_17158907265610/Dashboard1?publish=yes" class="button">view project</a></li>
-									</ul>
-								</article>
-
-								<h2><a href="https://app.powerbi.com/reportEmbed?reportId=e1230eca-1ba2-4a1c-be5c-cb43d58d3e26&autoAuth=true&ctid=704ce3d6-a4bf-4e09-8516-d52840c9f7a9">Power BI Projects<br />
-								</a></h2>
-							</header>
-							<a href="https://app.powerbi.com/reportEmbed?reportId=e1230eca-1ba2-4a1c-be5c-cb43d58d3e26&autoAuth=true&ctid=704ce3d6-a4bf-4e09-8516-d52840c9f7a9" class="image fit"><img src="images/Screenshot (1).png" alt="" /></a>
-							<p>Power BI dashboards</p>
-							<ul class="actions special">
-								<li><a href="https://app.powerbi.com/reportEmbed?reportId=e1230eca-1ba2-4a1c-be5c-cb43d58d3e26&autoAuth=true&ctid=704ce3d6-a4bf-4e09-8516-d52840c9f7a9" class="button">view project</a></li>
-							</ul>
-						</article>
-
-				<!-- Footer -->	<section class="split contact">
-							<section class="alt">
-								<h3>Location</h3>
-								<p><br />
-								Vredenburg, WC 12345-67890</p>
-							</section>
-							<section>
-								<h3>Phone</h3>
-								<p><a href="#">(+27) 760387475</a></p>
-							</section>
-							<section>
-								<h3>Email</h3>
-								<p><a href="#">yazininkosinnyathi@gmail.com</a></p>
-							</section>
-							<section>
-								<h3>Social</h3>
-								<ul class="icons alt">
-						
-								
-									<li><a href="https://www.linkedin.com/in/yazininkosi-nyathi/" class="icon brands alt fa-linkedin"><span class="label">linkedin</span></a></li>
-									<li><a href="https://github.com/YazNkocie" class="icon brands alt fa-github"><span class="label">GitHub</span></a></li>
-								</ul>
-							</section>
-						</section>
-					</footer>
-
-				<!-- Copyright -->
-					<div id="copyright">
-						<ul><li>&copy; Untitled</li><li>Design: <a href="https://html5up.net">HTML5 UP</a></li></ul>
-					</div>
-
-			</div>
-
-		<!-- Scripts -->
-			<script src="assets/js/jquery.min.js"></script>
-			<script src="assets/js/jquery.scrollex.min.js"></script>
-			<script src="assets/js/jquery.scrolly.min.js"></script>
-			<script src="assets/js/browser.min.js"></script>
-			<script src="assets/js/breakpoints.min.js"></script>
-			<script src="assets/js/util.js"></script>
-			<script src="assets/js/main.js"></script>
-
-	</body>
+    <!-- Scripts -->
+    <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+    <script>
+        document.getElementById('menu-toggle').addEventListener('click', () => {
+            const menu = document.getElementById('mobile-menu');
+            menu.classList.toggle('hidden');
+        });
+    </script>
+    <style>
+        .bg-navy { background-color: #1B263B; }
+        .text-navy { color: #1B263B; }
+        .bg-teal-600 { background-color: #0D9488; }
+        .text-teal-600 { color: #0D9488; }
+        .hover\:text-teal-600:hover { color: #0D9488; }
+        .bg-teal-700 { background-color: #087F78; }
+        .hover\:bg-teal-700:hover { background-color: #087F78; }
+        .hover\:text-teal-400:hover { color: #5EEAD4; }
+        .focus\:ring-teal-600:focus { --tw-ring-color: #0D9488; }
+        .text-shadow-md { text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5); }
+        .animate-fade-in {
+            animation: fadeIn 1s ease-in-out;
+        }
+        .animation-delay-200 { animation-delay: 0.2s; }
+        .animation-delay-400 { animation-delay: 0.4s; }
+        @keyframes fadeIn {
+            0% { opacity: 0; transform: translateY(20px); }
+            100% { opacity: 1; transform: translateY(0); }
+        }
+    </style>
+</body>
 </html>
